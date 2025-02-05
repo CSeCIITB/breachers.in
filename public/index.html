@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="description"
+      content="Join Breach CTF, the ultimate hacking challenge. Test your skills, learn, and compete for great prizes!"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="/index.css" />
+    <title>BreachCTF</title>
+  </head>
+  <body
+    class="min-h-screen bg-black text-teal-400 overflow-x-hidden py-10 px-4 sm:px-6 md:px-10"
+  >
+    <canvas
+      id="matrix-background"
+      class="absolute top-0 left-0 w-screen h-screen hero-bg"
+    ></canvas>
+
+    <main>
+      <section
+        class="relative h-screen px-10 text-center flex flex-col justify-center items-center"
+      >
+        <div>
+          <div class="glitch text-3xl sm:text-5xl font-bold text-center mb-8">
+            Breach CTF
+          </div>
+
+          <p class="text-sm text-teal-400 sm:text-base text-center mb-12">
+            Test your hacking skills in the ultimate Capture The Flag
+            competition!
+          </p>
+
+          <!-- Countdown -->
+          <div class="text-center">
+            <h2 class="text-base sm:text-xl font-semibold mb-4">
+              Countdown to Breach CTF
+            </h2>
+            <div
+              class="flex justify-center flex-wrap bg-black bg-opacity-50 p-4 sm:p-6 rounded-lg border border-teal-500"
+            >
+              <div class="flex flex-col items-center mx-2 sm:mx-4">
+                <span
+                  id="countdown-days"
+                  class="text-lg sm:text-2xl font-bold text-teal-400"
+                ></span>
+                <span class="text-xs sm:text-sm uppercase text-teal-600"
+                  >Days</span
+                >
+              </div>
+
+              <div class="flex flex-col items-center mx-2 sm:mx-4">
+                <span
+                  id="countdown-hours"
+                  class="text-lg sm:text-2xl font-bold text-teal-400"
+                ></span>
+                <span class="text-xs sm:text-sm uppercase text-teal-600"
+                  >Hours</span
+                >
+              </div>
+
+              <div class="flex flex-col items-center mx-2 sm:mx-4">
+                <span
+                  id="countdown-minutes"
+                  class="text-lg sm:text-2xl font-bold text-teal-400"
+                ></span>
+                <span class="text-xs sm:text-sm uppercase text-teal-600"
+                  >Minutes</span
+                >
+              </div>
+
+              <div class="flex flex-col items-center mx-2 sm:mx-4">
+                <span
+                  id="countdown-seconds"
+                  class="text-lg sm:text-2xl font-bold text-teal-400"
+                ></span>
+                <span class="text-xs sm:text-sm uppercase text-teal-600"
+                  >Seconds</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Register Now Button -->
+          <button
+            class="mt-12 bg-teal-600 hover:bg-teal-700 text-black text-xs sm:text-sm font-bold py-2 px-4 rounded-lg transition-all duration-300 transform"
+          >
+            Registrations Open Soon!
+          </button>
+        </div>
+      </section>
+
+      <section
+        class="mt-16 p-4 sm:p-6 flex flex-col md:flex-row border border-teal-500 flex-col md:flex-row items-center justify-center gap-8"
+      >
+        <div class="flex-1">
+          <h2 class="text-xl sm:text-2xl font-semibold mb-4">
+            Organized by&nbsp;
+            <a
+              href="https://cseciitb.github.io"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="hover:text-teal-300 underline"
+            >
+              CSeC IITB
+            </a>
+          </h2>
+          <p class="text-xs sm:text-sm mb-4">
+            We're a group of enthusiasts who actively participate in Capture The
+            Flag (CTF) competitions. Our mission is simple: to make cyber
+            security accessible and engaging for everyone in the institute.
+          </p>
+          <p class="text-xs sm:text-sm">
+            From hands-on workshops to collaborative learning, we're here to
+            equip you with the skills needed to navigate the ever-changing cyber
+            security landscape. Join us in exploring the ins and outs of digital
+            security and let's work together to ensure a safer digital future.
+          </p>
+        </div>
+        <div class="flex-1 flex items-center justify-center">
+          <img src="/csec_logo.png" alt="CSeC Logo" />
+        </div>
+      </section>
+
+      <section class="mt-16 text-center">
+        <h2 class="text-xl sm:text-2xl font-semibold mb-4">
+          Ready to Test Your Skills?
+        </h2>
+        <p class="text-sm sm:text-base mb-8">
+          Join us for an unforgettable hacking experience!
+        </p>
+        <button
+          class="bg-teal-600 hover:bg-teal-700 text-black text-xs sm:text-sm font-bold py-2 px-4 rounded-lg transition-all duration-300 transform"
+        >
+          Registrations for Breach CTF Open Soon!
+        </button>
+      </section>
+    </main>
+
+    <script defer src="/index.js"></script>
+  </body>
+</html>

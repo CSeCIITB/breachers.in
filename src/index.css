@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+body {
+  font-family: "Press Start 2P", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.hero-bg {
+  -webkit-mask-image: linear-gradient(to bottom, black 90%, transparent 100%);
+  mask-image: linear-gradient(to bottom, black 90%, transparent 100%);
+}
+
+/* Glitch Animation */
+.glitch {
+  position: relative;
+  color: #00d5be;
+  text-shadow: 0.05em 0 0 #00ff00, -0.025em -0.05em 0 #fe0000,
+    0.025em 0.05em 0 #0000fe;
+  animation: glitch 500ms infinite;
+}
+
+.glitch span {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.glitch span:first-child {
+  animation: glitch 650ms infinite;
+  clip-path: polygon(0 0, 100% 0, 100% 45%, 0 45%);
+  transform: translate(-0.025em, -0.0125em);
+  opacity: 0.8;
+}
+
+.glitch span:last-child {
+  animation: glitch 375ms infinite;
+  clip-path: polygon(0 80%, 100% 20%, 100% 100%, 0 100%);
+  transform: translate(0.0125em, 0.025em);
+  opacity: 0.8;
+}
+
+@keyframes glitch {
+  0% {
+    text-shadow: 0.05em 0 0 #00ff00, -0.05em -0.025em 0 #fe0000,
+      -0.025em 0.05em 0 #0000fe;
+  }
+  14% {
+    text-shadow: 0.05em 0 0 #00ff00, -0.05em -0.025em 0 #fe0000,
+      -0.025em 0.05em 0 #0000fe;
+  }
+  15% {
+    text-shadow: -0.05em -0.025em 0 #00ff00, 0.025em 0.025em 0 #fe0000,
+      -0.05em -0.05em 0 #0000fe;
+  }
+  49% {
+    text-shadow: -0.05em -0.025em 0 #00ff00, 0.025em 0.025em 0 #fe0000,
+      -0.05em -0.05em 0 #0000fe;
+  }
+  50% {
+    text-shadow: 0.025em 0.05em 0 #00ff00, 0.05em 0 0 #fe0000,
+      0 -0.05em 0 #0000fe;
+  }
+  99% {
+    text-shadow: 0.025em 0.05em 0 #00ff00, 0.05em 0 0 #fe0000,
+      0 -0.05em 0 #0000fe;
+  }
+  100% {
+    text-shadow: -0.025em 0 0 #00ff00, -0.025em -0.025em 0 #fe0000,
+      -0.025em -0.05em 0 #0000fe;
+  }
+}
