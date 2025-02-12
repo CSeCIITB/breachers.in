@@ -32,9 +32,9 @@ function draw() {
 
 setInterval(draw, 33);
 
-const targetDate = new Date("2025-04-06T23:59:59");
+const targetDate = Date.UTC(2025, 3, 5, 2, 30);
 function calculateTimeLeft() {
-  const difference = +targetDate - +new Date();
+  const difference = targetDate - +new Date();
   let timeLeft = {};
 
   if (difference > 0) {
