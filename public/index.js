@@ -58,4 +58,4 @@ function updateCountdown() {
   document.querySelector("#countdown-seconds").textContent = timeLeft.seconds;
 }
 
-setInterval(updateCountdown, 1000);
+// setInterval(updateCountdown, 1000);
