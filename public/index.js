@@ -40,7 +40,7 @@ setInterval(drawMatrix, 33);
 // =======================
 
 // Month is 0-indexed!! (Sed :( 
-const targetDate = Date.UTC(2026, 3, 4, 0, 0);
+const targetDate = Date.UTC(2026, 3, 4, 2, 30);
 
 const daysEl = document.getElementById("countdown-days");
 const hoursEl = document.getElementById("countdown-hours");
@@ -60,12 +60,15 @@ function updateCountdown() {
     hoursEl.textContent = 0;
     minutesEl.textContent = 0;
     secondsEl.textContent = 0;
-
+    if (cta) {
     cta.textContent = "Breach CTF 2026 has Started!";
+    }
     return;
   }
-
+  
+  if (cta) {
   cta.textContent = "Register for Breach CTF 2026 Now!";
+  }
 
   const days = Math.floor(difference / (1000 * 60 * 60 * 24));
   const hours = Math.floor((difference / (1000 * 60 * 60)) % 24);
